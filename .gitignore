@@ -1,1 +1,4 @@
 *-backups
+*.lck
+*-cache
+production
