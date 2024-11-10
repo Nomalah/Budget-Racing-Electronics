@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# DTF13-4P
+#
+DEF DTF13-4P J 0 40 Y Y 1 L N
+F0 "J" -200 300 50 H V L BNN
+F1 "DTF13-4P" -200 -500 50 H V L BNN
+F2 "TE_DTF13-4P" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "TE Connectivity" 0 0 50 H I L BNN "MF"
+F5 "" 0 0 50 H I L BNN "DESCRIPTION"
+F6 "" 0 0 50 H I L BNN "PACKAGE"
+F7 "DTF13-4P" 0 0 50 H I L BNN "MPN"
+F8 "" 0 0 50 H I L BNN "PRICE"
+F9 "Manufacturer recommendation" 0 0 50 H I L BNN "STANDARD"
+F10 "NC" 0 0 50 H I L BNN "PARTREV"
+F11 "In stock" 0 0 50 H I L BNN "AVAILABILITY"
+DRAW
+S -200 -300 200 200 0 0 10 f
+X 1 1 -400 100 200 R 40 40 0 0 P 
+X 2 2 -400 0 200 R 40 40 0 0 P 
+X 3 3 -400 -100 200 R 40 40 0 0 P 
+X 4 4 -400 -200 200 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
