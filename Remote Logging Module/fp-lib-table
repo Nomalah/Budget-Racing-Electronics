@@ -1,5 +1,4 @@
 (fp_lib_table
   (version 7)
   (lib (name "DTF13-4P")(type "KiCad")(uri "${KIPRJMOD}/../Component Library/DTF13-4P")(options "")(descr ""))
-  (lib (name "LDS_C814RI")(type "KiCad")(uri "${KIPRJMOD}/../Component Library/LDS_C814RI")(options "")(descr ""))
 )

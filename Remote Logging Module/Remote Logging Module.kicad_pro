@@ -431,7 +431,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Steering Wheel.kicad_pro",
+    "filename": "Remote Logging Module.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -469,7 +469,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../CAD/Suspension/Steering/Wheel/Steering Wheel.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -576,7 +576,7 @@
   },
   "sheets": [
     [
-      "172a81ae-977d-4424-a4e5-8647088793e6",
+      "7933f1e2-4788-49d7-b796-349cbbfc0272",
       "Root"
     ]
   ],

@@ -73,7 +73,6 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
-        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -431,7 +430,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Steering Wheel.kicad_pro",
+    "filename": "Shift Control Unit.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -469,7 +468,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../CAD/Suspension/Steering/Wheel/Steering Wheel.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -477,7 +476,6 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -576,7 +574,7 @@
   },
   "sheets": [
     [
-      "172a81ae-977d-4424-a4e5-8647088793e6",
+      "53c0f472-ade3-4c62-b0f3-be16f2e00612",
       "Root"
     ]
   ],
