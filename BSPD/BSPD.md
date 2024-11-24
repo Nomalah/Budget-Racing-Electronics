@@ -103,3 +103,27 @@ The selected [ETB](https://www.bosch-motorsport.com/content/downloads/Raceparts/
 | ------- | ---- | - |
 | 0% / Idle  | 0.5? | 4.5? |
 | 100% / WO  | 4.5? | 0.5? |
+
+## Errata
+
+### Rev A
+
+The following errata were found in Rev A of the BSPD, corrected, and tested before being documented:
+
+- Q2 was placed in the schematic with the wrong orientation. The drain and source were swapped. This was corrected in Rev B.
+- A misreading of the datasheet for the LM339 for output logic made the schematic logic/labeling incorrect.
+  - It was assumed that when + > -, the output would be pulled low, this is incorrect, the LM339 pulls the output low when + < -.
+  - <span style="text-decoration:overline">PANIC_BRAKE</span> (Rev A) logic was inverted and thus renamed to PANIC_BRAKE (Rev B+).
+    - Due to this, D1 was required to be flipped as now the fault is active high.
+  - Over & undervoltage detection for BPT & TPS was assigned incorrectly (was tuned via potentiometer to flip to the correct logic). These were swapped in Rev B to correct the logic.
+  - As SENSORS_OK is fault is active low, pins 8 & 9 for U1D were swapped to correct the logic.
+
+
+## Notes
+
+### Rev A
+
+- This was built to test functionality and validation of circuit design. Pots were used to tune thresholds before sensors were finalized
+- This revision used 5 extended components which increased the cost of the board, most should be removed/replaced in future revisions.
+  - LM339, ESDA-05N, BSS84, POTs (3314J-1-103E), BAT43W, C1 & C2 (150nF)
+- Many test points were used to validate the circuit, most can be removed in future revisions.
