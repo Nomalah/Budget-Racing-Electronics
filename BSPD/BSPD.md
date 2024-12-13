@@ -153,11 +153,25 @@ The following errata were found in Rev A of the BSPD, corrected, and tested befo
 
 ### Rev A
 
-| Parameter | Description  | Typical Value | Unit |
+| Parameter | Description  | Approximate Value | Unit |
 | ------- |- | ---- | - |
 | t<sub>SOK_FAULT</sub> | Time to propagate SENSORS_OK condition | 25 | ms |
-| t<sub>SOK_RECOVERY</sub> | Time required to recover from SENSORS_OK condition | 11 | ms |
 | t<sub>HB_FAULT</sub> | Time to propagate PANIC_BRAKE condition | 473 | ms |
-| t<sub>HB_RECOVERY</sub> | Time required to recover from PANIC_BRAKE condition | 4 | ms |
 
-These parameters were measured by hand, and are not guaranteed to be accurate for all frequencies & duty cycles. They are provided as a rough estimate of the circuit's behavior.
+These parameters are approximate, and are not guaranteed to be accurate for all frequencies & duty cycles. They are provided as a rough estimate of the circuit's behavior.
+
+Below is the validated thresholds at frequencies varying from 0.01Hz to 9kHz.
+
+| Color | Meaning  |
+| - | ------- |
+| Orange | Input RC cutoff frequency |
+| Red | Must fault region |
+| Green | Safe region |
+| Black | Rules fault threshold |
+| Blue | Measured fault threshold |
+
+#### SENSORS_OK Fault Threshold
+![alt text](image-8.png)
+
+#### HARD_BRAKING Fault Threshold
+![alt text](image-9.png)
