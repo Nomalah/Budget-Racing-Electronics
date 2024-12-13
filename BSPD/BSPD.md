@@ -175,3 +175,7 @@ Below is the validated thresholds at frequencies varying from 0.01Hz to 9kHz.
 
 #### HARD_BRAKING Fault Threshold
 ![alt text](image-9.png)
+
+
+## Appendix A - ESP-Profiler/Threshold Finder Schematic
+![alt text](image-10.png)
