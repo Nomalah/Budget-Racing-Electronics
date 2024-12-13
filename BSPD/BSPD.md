@@ -68,6 +68,27 @@ The time to propagate the fault assuming 10% accuracy components is as follows w
 | <span style="text-decoration:overline">PANIC_BRAKE</span> | Nominal  | 0.693 |
 | <span style="text-decoration:overline">PANIC_BRAKE</span> | Maximum  | 0.966 |
 
+### Simulation & Validation
+
+The following simulation was run to verify the time delay of the fault propagation. 
+
+| Trace Color | Meaning  |
+| - | ------- |
+| Green | Fault Active |
+| Red | SENSORS_OK |
+| Orange | SENSORS_OK RC |
+
+![alt text](image-7.png)
+
+The simulation matched quite well against what was measured for Rev A. 
+
+| Trace Color | Meaning  |
+| - | ------- |
+| Blue | SENSORS_OK |
+| Yellow | SENSORS_OK RC |
+
+![alt text](Scope/7.bmp)
+
 ## Startup
 During startup, assuming no fault, SENSORS_OK will be pulled up to 5V through a 1K pullup. It will charge the RC circuit at the negative input of U1C. Because R<sub>D4</sub> << R<sub>R10</sub> (and likewise for <span style="text-decoration:overline">PANIC_BRAKE</span>'s RC circuit), this can be simplified to a RC circuit with the following values:
 - V<sub>cc</sub> = 5 - V<sub>f</sub>
@@ -127,3 +148,16 @@ The following errata were found in Rev A of the BSPD, corrected, and tested befo
 - This revision used 5 extended components which increased the cost of the board, most should be removed/replaced in future revisions.
   - LM339, ESDA-05N, BSS84, POTs (3314J-1-103E), BAT43W, C1 & C2 (150nF)
 - Many test points were used to validate the circuit, most can be removed in future revisions.
+
+## Electrical Characteristics
+
+### Rev A
+
+| Parameter | Description  | Typical Value | Unit |
+| ------- |- | ---- | - |
+| t<sub>SOK_FAULT</sub> | Time to propagate SENSORS_OK condition | 25 | ms |
+| t<sub>SOK_RECOVERY</sub> | Time required to recover from SENSORS_OK condition | 11 | ms |
+| t<sub>HB_FAULT</sub> | Time to propagate PANIC_BRAKE condition | 473 | ms |
+| t<sub>HB_RECOVERY</sub> | Time required to recover from PANIC_BRAKE condition | 4 | ms |
+
+These parameters were measured by hand, and are not guaranteed to be accurate for all frequencies & duty cycles. They are provided as a rough estimate of the circuit's behavior.
