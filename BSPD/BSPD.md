@@ -101,8 +101,8 @@ The selected [ETB](https://www.bosch-motorsport.com/content/downloads/Raceparts/
 
 | Condition  | TPS1 (V) | TPS2 (V) |
 | ------- | ---- | - |
-| 0% / Idle  | 0.5? | 4.5? |
-| 100% / WO  | 4.5? | 0.5? |
+| 0% / Idle  | 0.967 | 4.76 |
+| 100% / WO  | 4.11 | 0.318 |
 
 ## Errata
 

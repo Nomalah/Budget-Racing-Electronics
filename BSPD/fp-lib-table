@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "RRM")(type "KiCad")(uri "${KIPRJMOD}/RRM.pretty")(options "")(descr ""))
+)
